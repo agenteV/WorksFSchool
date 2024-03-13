@@ -8,12 +8,10 @@ const header = document.createElement('header');
             
         `;
         app.appendChild(header);
-        
-        //FEITO
 
-const nav = document.createElement('nav');
-const ul = document.createElement('ul');
-const sections = ['Apresentação', 'Habilidades', 'Contato'];
+      const nav = document.createElement('nav');
+      const ul = document.createElement('ul');
+      const sections = ['Apresentação', 'Habilidades', 'Contato'];
         sections.forEach(section => {
             const li = document.createElement('li');
             const a = document.createElement('a');
@@ -25,7 +23,6 @@ const sections = ['Apresentação', 'Habilidades', 'Contato'];
         nav.appendChild(ul);
         app.appendChild(nav);
 
-        //FEITO 
 
         const apresentacao = document.createElement('section');
         apresentacao.id = 'apresentacao';
@@ -74,8 +71,6 @@ const sections = ['Apresentação', 'Habilidades', 'Contato'];
         app.appendChild(apresentacao);
 
 
-        //FEITO - APENAS ARRUMAR O CSS
-
  const habilidades = document.createElement('section');
  habilidades.id = 'habilidades';
  habilidades.innerHTML = `
@@ -105,8 +100,8 @@ habilidadesTable.innerHTML= `
 <tr>
   <td>Raul</td>
   <td><i class="fa fa-check"></i></td>
-  <td><i class="fa fa-check"></i></td>
   <td><i class="fa fa-remove"></i></td>
+  <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
   <td>Vitor</td>
@@ -120,7 +115,7 @@ habilidadesTable.innerHTML= `
 app.appendChild(habilidades);
 app.appendChild(habilidadesTable);
  
-//FEITO
+
 const contatoH2 = document.createElement('h2')
 contatoH2.id = 'contatoH2'
 contatoH2.innerHTML=`
@@ -152,17 +147,12 @@ app.appendChild(contatoH2)
  `;
  app.appendChild(contato);
 
- //FEITO
-
-
  const footer = document.createElement('footer');
  footer.innerHTML = `
      <p>&copy; 2024 - Meu Portfólio Pessoal. Todos os direitos reservados.</p>
  `;
  app.appendChild(footer);
 
- //FEITO
- 
     function handleSubmit(event) {
         event.preventDefault();
 

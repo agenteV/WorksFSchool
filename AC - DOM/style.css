@@ -19,8 +19,6 @@ h1 {
     word-break: break-all;
 }
 
-/*HEADER FEITO*/
-
 nav {
     width: 100%;
     background-color: #272424;
@@ -69,54 +67,54 @@ nav ul li a:hover {
       display: block;
     }
     }
-/*NAV FEITA*/
+ 
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 320px;
+  border: 1px solid #3c0a5e;
+  perspective: 1000px; 
+  display: inline-block;
+  margin: 8px; 
+  padding: 8px;
+  vertical-align: top; 
+}
 
-    .flip-card {
-        background-color: transparent;
-        width: 300px;
-        height: 320px;
-        border: 1px solid #3c0a5e;
-        perspective: 1000px; 
-        display: flex;
-        flex-direction: row;
-        margin: 8px -16px;
-        padding: 8px;
-        vertical-align: middle;
-        
-      }
-      .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-        display: flex;
-        flex-direction: row;
-        
-      }
-      .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-      }
-      .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden; 
-        backface-visibility: hidden;
-        justify-content: center;
-        vertical-align: middle;
-      }
-      .flip-card-front {
-        background-color: #181515;
-        color: rgb(0, 0, 0);
-      }
-      .flip-card-back {
-        background-color: #5f1392;
-        color: white;
-        transform: rotateY(180deg);
-      }
-/*APRESENTAÇÃO MAIS OU MENOS FEITA - PRA ARRUMAR */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%; 
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  display: flex; 
+  flex-direction: column; 
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.flip-card-front {
+  background-color: #181515;
+  color: rgb(0, 0, 0);
+}
+
+.flip-card-back {
+  background-color: #5f1392;
+  color: white;
+  transform: rotateY(180deg);
+}
 
 #habilidades h2{
     text-align: center;
@@ -174,9 +172,7 @@ table {
   .fa-remove {
     color: red;
   }
-  /*HABILIDADES*/
-
-
+  
   * {box-sizing: border-box}
 
   .container {
@@ -230,8 +226,6 @@ table {
 #contato form button:hover {
     background-color: #9b22ec;
 }
-
-/*CONTATO*/
 
 footer {
     background-color: #161515;
