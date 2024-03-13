@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #8e21d6;
+    background-color: #8e21d64f;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -19,8 +19,7 @@ h1 {
     word-break: break-all;
 }
 
-
-
+/*HEADER FEITO*/
 
 nav {
     width: 100%;
@@ -70,9 +69,60 @@ nav ul li a:hover {
       display: block;
     }
     }
+/*NAV FEITA*/
 
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 320px;
+        border: 1px solid #3c0a5e;
+        perspective: 1000px; 
+        display: flex;
+        flex-direction: row;
+        margin: 8px -16px;
+        padding: 8px;
+        vertical-align: middle;
+        
+      }
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: row;
+        
+      }
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; 
+        backface-visibility: hidden;
+        justify-content: center;
+        vertical-align: middle;
+      }
+      .flip-card-front {
+        background-color: #181515;
+        color: rgb(0, 0, 0);
+      }
+      .flip-card-back {
+        background-color: #5f1392;
+        color: white;
+        transform: rotateY(180deg);
+      }
+/*APRESENTAÇÃO MAIS OU MENOS FEITA - PRA ARRUMAR */
 
-
+#habilidades h2{
+    text-align: center;
+    color: #9b05ff;
+   font-size: 35px;
+}
 
 main {
     padding: 20px;
@@ -80,7 +130,7 @@ main {
 
 section {
     margin-bottom: 40px;
-    color: #224dc2;
+    color: #581212;
 }
 
 #habilidades .habilidade {
@@ -93,12 +143,65 @@ section {
 #habilidades .habilidade h3 {
     margin-top: 0;
 }
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #000000;
+    color: #9b05ff;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+    background-color: #00000000;
+  }
+  
+  th:first-child, td:first-child {
+    text-align: left;
+  }
+  
+  
+  tr:nth-child(even) {
+    background-color: #0a0808
+  }
+  
+  .fa-check {
+    color: green;
+  }
+  
+  .fa-remove {
+    color: red;
+  }
+  /*HABILIDADES*/
 
 
+  * {box-sizing: border-box}
 
+  .container {
+    padding: 50px;
+    color: #5f1392;
+    text-transform: uppercase;
+  }
 
-
-
+  #contatoH2{
+    color: #5f1392;
+  }
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  hr {
+    border: 1px solid #644dcc;
+    margin-bottom: 25px;
+  }
 
 #contato form label {
     display: block;
@@ -108,30 +211,34 @@ section {
 #contato form input,
 #contato form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid purple;
+    align-items: center;
 }
 
 #contato form button {
-    background-color: #333;
+    background-color: #5f1392;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 50px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
 #contato form button:hover {
-    background-color: #555;
+    background-color: #9b22ec;
 }
 
+/*CONTATO*/
+
 footer {
-    background-color: #333;
+    background-color: #161515;
     color: #fff;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
+    
 }
 
 @media (max-width: 768px) {

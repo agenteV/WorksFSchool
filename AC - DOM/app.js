@@ -11,8 +11,6 @@ const header = document.createElement('header');
         
         //FEITO
 
-
-
 const nav = document.createElement('nav');
 const ul = document.createElement('ul');
 const sections = ['Apresentação', 'Habilidades', 'Contato'];
@@ -29,87 +27,160 @@ const sections = ['Apresentação', 'Habilidades', 'Contato'];
 
         //FEITO 
 
-        const row = document.createElement('section')
-        row.id = 'row'
-        const column = document.createElement('column')
-        column.id = 'column'
-        const content = document.createElement('content')
-        content.id = 'content'
         const apresentacao = document.createElement('section');
         apresentacao.id = 'apresentacao';
-        row.innerHTML = `
-            <img src>
-            <h3>Sobre mim</h3>
-            <p>Eu sou Vitor D, tenho 17 anos e sou um pequeno desenvolvedor que tem um grande sonho em se tornar um programador de sucesso, e poder recompensar minha familia por tudo oque eles fizeram por mim.</p>
-            <br>
-            <p>Olá eu sou Mateus, tenho 17 anos, já atuei na base do Palmeiras conquistando 1 brasileiro sub15 no clube, meu sonho é ser alguém de sucesso no ramo de tecnologia.</p>
-            <br>
-            <p>Olá, sou Raul tenho 17 anos e estudo na Fiap a muito tempo então sempre estive em contato com tecnologia, e decidi seguir na área.</p>
+        apresentacao.innerHTML = `
+        <center>
+        <div class="flip-card" style="align-items: center;">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src="imagens/vithonex.jpg" alt="Avatar" style="width:240px;height:300px;">
+            </div>
+        <div class="flip-card-back">
+        <h1>Vitor D</h1>
+        <p>17 anos</p>
+        <p>Sou um pequeno desenvolvedor que tem um grande sonho em se tornar um programador de sucesso.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src="imagens/mateus.jpg" alt="Avatar" style="width:240px;height:300px;">
+            </div>
+        <div class="flip-card-back">
+        <h1>Mateus D</h1>
+        <p>17 anos</p>
+        <p>Meu sonho é ser alguém de sucesso no ramo de tecnologia.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src="imagens/raul.jpg" alt="Avatar" style="width:250px;height:300px;">
+            </div>
+        <div class="flip-card-back">
+        <h1>Raul</h1>
+        <p>17 anos</p>
+        <p>Estudo na Fiap a muito tempo então sempre estive em contato com tecnologia, e decidi seguir na área.</p>
+        </div>
+    </div>
+    </div>
+    </center> 
         `;
-        app.appendChild(row);
+        app.appendChild(apresentacao);
 
 
-        //
+        //FEITO - APENAS ARRUMAR O CSS
 
- // Cria a seção de habilidades
  const habilidades = document.createElement('section');
  habilidades.id = 'habilidades';
  habilidades.innerHTML = `
+ 
+ <br>
+ <center>
      <h2>Nossas Habilidades</h2>
- `;
- const habilidadesLista = ['HTML', 'CSS', 'JavaScript'];
- habilidadesLista.forEach(habilidade => {
-     const div = document.createElement('div');
-     div.classList.add('habilidade');
-     div.innerHTML = `
-         <h3>${habilidade}</h3>
-         <p>Alguma descrição sobre ${habilidade}</p>
+</center>
+<hr>
      `;
-     habilidades.appendChild(div);
- });
- app.appendChild(habilidades);
+const habilidadesTable = document.createElement('table');
+habilidadesTable.id = 'habilidadesTable'
+habilidadesTable.innerHTML= `
+<table>
+<tr>
+  <th style="width:50%">Habilidades de cada Integrante</th>
+  <th>HTML</th>
+  <th>CSS</th>
+  <th>JS</th>
+</tr>
+<tr>
+  <td>Mateus</td>
+  <td><i class="fa fa-check"></i></td>
+  <td><i class="fa fa-check"></i></td>
+  <td><i class="fa fa-remove"></i></td>
+</tr>
+<tr>
+  <td>Raul</td>
+  <td><i class="fa fa-check"></i></td>
+  <td><i class="fa fa-check"></i></td>
+  <td><i class="fa fa-remove"></i></td>
+</tr>
+<tr>
+  <td>Vitor</td>
+  <td><i class="fa fa-check"></i></td>
+  <td><i class="fa fa-remove"></i></td>
+  <td><i class="fa fa-check"></i></td>
+</tr>
+</table>
 
- // Cria o formulário de contato
+`;
+app.appendChild(habilidades);
+app.appendChild(habilidadesTable);
+ 
+//FEITO
+const contatoH2 = document.createElement('h2')
+contatoH2.id = 'contatoH2'
+contatoH2.innerHTML=`
+<center>
+        <br>
+     <h2>Entre em Contato</h2>
+     </center>
+`;
+app.appendChild(contatoH2)
+ 
  const contato = document.createElement('section');
  contato.id = 'contato';
  contato.innerHTML = `
-     <h2>Entre em Contato</h2>
+     <div class="container">
      <form>
-         <label for="nome">Nome:</label>
-         <input type="text" id="nome" name="nome" required>
-
-         <label for="email">Email:</label>
-         <input type="email" id="email" name="email" required>
-
-         <label for="mensagem">Mensagem:</label>
-         <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
-         <button type="submit">Enviar</button>
+   
+       <label for="name">Nome: </label>
+       <input type="text" id="name" name="name" placeholder="Seu nome...">
+   
+       <label for="email">Email: </label>
+       <input type="text" id="email" name="email"  placeholder="Digite seu E-mail..">
+   
+       <label for="message">Mensagem: </label>
+       <textarea id="message" name="message" placeholder="Mensagem*" style="height:100px"></textarea>
+   
+       <button type="submit" class="registerbtn">Enviar</button>   
      </form>
+   </div>
  `;
  app.appendChild(contato);
 
- // Cria o footer
+ //FEITO
+
+
  const footer = document.createElement('footer');
  footer.innerHTML = `
-     <p>&copy; 2023 - Meu Portfólio Pessoal. Todos os direitos reservados.</p>
+     <p>&copy; 2024 - Meu Portfólio Pessoal. Todos os direitos reservados.</p>
  `;
  app.appendChild(footer);
 
- // Manipulação do formulário
- const form = document.querySelector('form');
- form.addEventListener('submit', function(event) {
-     event.preventDefault(); // Evita o comportamento padrão de recarregar a página
-     const nome = document.getElementById('nome').value;
-     const email = document.getElementById('email').value;
-     const mensagem = document.getElementById('mensagem').value;
+ //FEITO
+ 
+    function handleSubmit(event) {
+        event.preventDefault();
 
-     // Aqui você pode enviar os dados para um servidor, enviar um email, etc.
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
 
-     // Limpa os campos do formulário após o envio
-     document.getElementById('nome').value = '';
-     document.getElementById('email').value = '';
-     document.getElementById('mensagem').value = '';
+            const name = form.elements['name'].value;
+            const email = form.elements['email'].value;
+            const message = form.elements['message'].value;
 
-     alert('Mensagem enviada com sucesso! Obrigado, ' + nome + '!');
- });
+            setTimeout(function() {
+              alert('Obrigado por entrar em contato, ' + name + '! Nós responderemos em breve, no email: ' + email);
+              form.reset();
+            }, 1000);
+          });
+        } 
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
+
+        alert('Obrigado por entrar em contato!');
