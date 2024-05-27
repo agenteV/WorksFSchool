@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-digolinha': '#a8764a'
+        'primary-digolinha': 'black'
       }
     },
   },
