@@ -4,11 +4,12 @@ function Home() {
   console.log(data)
     return (  
       <>
-      <input type="text" id='buscar' placeholder='Digite sua busca' />
       <div className="grid grid-cols-3 gap-4">
 
       {data.map( filme => (
-              <div className='card' key={filme.title}> 
+        <>
+      
+        <div className='card' key={filme.title}> 
               <h1> {filme.title} </h1>
               <img src={filme.image} alt={filme.title} />
               <div className='tag'>
@@ -22,7 +23,8 @@ function Home() {
                 ))}
               </div>
             </div>
-              
+        </>
+        
             )
            )
           }

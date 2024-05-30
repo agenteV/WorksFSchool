@@ -3,9 +3,8 @@ import Navbar from "../Navbar/Navbar";
 function Header() {
     return ( 
     <>
-    <header className="flex justify-between bg-primary-digolinha text-white p-4">
-        <span>Olá amantes de cinema!</span>
-        <h1>Bem-vindos ao CineTinho!</h1>
+    <header className="bg-purple-800 flex justify-between items-center  text-white p-4">
+        <span>CineMania</span>
         <Navbar/>
     </header>
     </> 
