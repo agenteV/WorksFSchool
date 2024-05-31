@@ -1,50 +1,52 @@
 [
     {
-    "title": "Novidades no mundo do cinema",
-    "image": "gozao.jfif",
+    "title": "Planeta dos Macacos: O Reinado",
+    "image": "planeta-dos-macacos.webp",
     "text": [
-    "Esta semana foi repleta de novidades emocionantes no mundo do cinema! Novos trailers, anúncios de elenco e detalhes dos bastidores têm deixado os fãs ansiosos para o que está por vir. Não perca nada do que está acontecendo no universo cinematográfico com as últimas atualizações.",
-    "Confira o mais recente podcast dedicado ao cinema, onde especialistas discutem os lançamentos mais aguardados, as tendências da indústria e os bastidores das produções. Fique por dentro de todas as notícias quentes e análises aprofundadas sobre o mundo do entretenimento cinematográfico!"
+    "Data de Lançamento: 9 de Maio de 2024",
+    "Sinopse: Muitas sociedades de macacos cresceram desde quando César levou seu povo a um oásis, enquanto os humanos foram reduzidos a sobreviver e se esconder nas sombras. Um líder macaco começa a escravizar outros grupos para encontrar tecnologia humana, enquanto um jovem macaco, que viu seu clã ser capturado, embarca em uma viagem para encontrar a liberdade, sendo uma jovem humana a chave para todos."
     ],
-    "tags": ["cinema", "podcast"]
+    "tags": ["Ação", "cinema"]
     },
     {
-    "title": "Discussões e análises sobre os filmes mais recentes",
-    "image": "gozao1.png",
+    "title": "Guerra Civil",
+    "image": "guerra-civil-min-400x600.jpeg",
     "text": [
-    "Participe das discussões animadas sobre os filmes mais recentes na nossa comunidade do Discord! Todos os dias, os amantes do cinema se reúnem para trocar ideias, compartilhar opiniões e descobrir novas pérolas cinematográficas. Não perca a chance de fazer parte dessa comunidade apaixonada por cinema!",
-    "Junte-se a nós no Discord e mergulhe em debates sobre os últimos lançamentos, clássicos cult e tudo mais que envolve o mundo do cinema. Não importa se você é um cinéfilo experiente ou apenas está começando a explorar esse universo fascinante - há sempre algo interessante acontecendo em nossa comunidade."
+    "Data de Lançamento: 18 de Abril de 2024",
+    "Uma família luta pela sobrevivência enquanto uma guerra civil assola a América."
     ],
-    "tags": ["cinema", "discord"]
+    "tags": ["Drama", "cinema"]
     },
     {
-    "title": "Desafio de criação cinematográfica",
+    "title": "Godzilla & King Kong: O Novo Império",
+    "image": "0426941.webp",
     "text": [
-    "Você tem talento para contar histórias através da lente da câmera? Então o Desafio de Criação Cinematográfica é para você! Participe deste desafio emocionante, onde cineastas aspirantes têm a chance de mostrar seu talento e criatividade.",
-    "Ao longo de várias semanas, você terá a oportunidade de desenvolver seu próprio curta-metragem, explorando diferentes gêneros, técnicas de filmagem e narrativas. Receba orientação de profissionais do ramo, compartilhe seu progresso com outros cineastas e, no final, tenha seu trabalho avaliado por um júri de especialistas da indústria."
+    "Data de Lançamento: 28 de Março de 2024",
+    "Godzilla e o todo-poderoso Kong enfrentam uma ameaça colossal escondida nas profundezas do planeta, desafiando a sua própria existência e a sobrevivência da raça humana."
     ],
-    "tags": ["cinema", "desafio", "criação"]
+    "tags": ["cinema", "Ação"]
     },
     {
-        "title": "Novidades no mundo do cinema",
-        "image": "movie-deadpool.jpg",
+        "title": "Novidades no mundo do cinema!",
+        "image": "moana-2-trailer.webp",
         "text": [
         "Esta semana foi repleta de novidades emocionantes no mundo do cinema! Novos trailers, anúncios de elenco e detalhes dos bastidores têm deixado os fãs ansiosos para o que está por vir. Não perca nada do que está acontecendo no universo cinematográfico com as últimas atualizações.",
-        "Confira o mais recente podcast dedicado ao cinema, onde especialistas discutem os lançamentos mais aguardados, as tendências da indústria e os bastidores das produções. Fique por dentro de todas as notícias quentes e análises aprofundadas sobre o mundo do entretenimento cinematográfico!"
+        "Confira o mais novo filme da Disney, uma continuação... Vem ai Moana 2, após o sucesso do primeiro filme, o segundo já foi anunciado com a animação mais fluida e mais linda do que já, era. Já coloque na agenda que em 2025 teremos uma otima continuação."
         ],
-        "tags": ["cinema", "podcast"]
+        "tags": ["cinema", "news"]
         },
         {
-        "title": "Discussões e análises sobre os filmes mais recentes",
-        "image": "movie-guerra-civil.jpg",
+        "title": "Novo Trailer!",
+        "image": "deadpool-movie.jpeg",
         "text": [
-        "Participe das discussões animadas sobre os filmes mais recentes na nossa comunidade do Discord! Todos os dias, os amantes do cinema se reúnem para trocar ideias, compartilhar opiniões e descobrir novas pérolas cinematográficas. Não perca a chance de fazer parte dessa comunidade apaixonada por cinema!",
-        "Junte-se a nós no Discord e mergulhe em debates sobre os últimos lançamentos, clássicos cult e tudo mais que envolve o mundo do cinema. Não importa se você é um cinéfilo experiente ou apenas está começando a explorar esse universo fascinante - há sempre algo interessante acontecendo em nossa comunidade."
+        "Após alguns anos em seca de filmes bons, A Marvel finalmente pensou fora da caixa e resolveu fazer um dos maiores filmes nos ultimos anos, Deadpool & Wolverine será um grande filme pós Vingadores: Ultimato, pois ainda teremos viagem pelos multiversos e o grandissimo cross-over entre dois personagens que nos quadrinhos tem uma relação conturbada.",
+        "Participe das discussões animadas sobre os filmes mais recentes na nossa comunidade do Discord! Todos os dias, os amantes do cinema se reúnem para trocar ideias, compartilhar opiniões e descobrir novas pérolas cinematográficas. Não perca a chance de fazer parte dessa comunidade apaixonada por cinema!"
         ],
-        "tags": ["cinema", "discord"]
+        "tags": ["cinema", "discord", "news"]
         },
         {
-        "title": "Desafio de criação cinematográfica",
+        "title": "Rumor? Novo Filme sobre Minecraft pode vir a os cinemas",
+        "image": "jason-momoa-minecraft.jpeg",
         "text": [
         "Você tem talento para contar histórias através da lente da câmera? Então o Desafio de Criação Cinematográfica é para você! Participe deste desafio emocionante, onde cineastas aspirantes têm a chance de mostrar seu talento e criatividade.",
         "Ao longo de várias semanas, você terá a oportunidade de desenvolver seu próprio curta-metragem, explorando diferentes gêneros, técnicas de filmagem e narrativas. Receba orientação de profissionais do ramo, compartilhe seu progresso com outros cineastas e, no final, tenha seu trabalho avaliado por um júri de especialistas da indústria."

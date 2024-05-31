@@ -9,8 +9,8 @@ function Home() {
       {data.map( filme => (
         <>
       
-        <div className='card' key={filme.title}> 
-              <h1> {filme.title} </h1>
+        <div className='card ' key={filme.title}> 
+              <h1 className='decoration-solid'> {filme.title} </h1>
               <img src={filme.image} alt={filme.title} />
               <div className='tag'>
                 {filme.tags.map(tag => (
@@ -22,6 +22,7 @@ function Home() {
                   <p key={texto}> {texto} </p>
                 ))}
               </div>
+              <hr />
             </div>
         </>
         
