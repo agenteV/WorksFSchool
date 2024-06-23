@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 /*ATUALIZAR O ESTADO*/ 
 import { useEffect,useState } from "react";
+import { FaStar } from "react-icons/fa";
 
 function PaginaFilmes(){
 
@@ -21,9 +22,20 @@ function PaginaFilmes(){
 
     return(
         <>
-        <img src={`${urlImg}${filme.backdrop_path}`}/>
-        <h1>{filme.title}</h1>
-        <p>{filme.overview}</p>
+        <h1 className="p-4 text-purple-700 font-mono text-2xl">{filme.title}</h1>
+        <div className="flex justify-center w-100 h-100 border-spacing-1">
+        <img className="flex justify-center itens-center" src={`${urlImg}${filme.backdrop_path}`}/>
+        </div>
+        <h2 className="p-2  text-purple-700 font-mono text-xl ">Sinopse</h2>
+        <p className="text-left p-2">{filme.overview}</p>
+        <h2 className="p-2  text-purple-700 font-mono text-xl ">Avaliação:</h2>
+        <p className="text-yellow-500 text-xl p-3">
+            <FaStar/>  {filme.vote_average}
+        </p>
+        <h2 className="p-2  text-purple-700 font-mono text-xl ">Duração:</h2>
+        <p className="p-2">
+            {filme.runtime} min
+        </p>
         </>
     )
 }
